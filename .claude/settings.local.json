@@ -3,7 +3,19 @@
     "allow": [
       "Bash(git init)",
       "Bash(git add .)",
-      "Bash(git commit -m \"$(cat <<''EOF''\n初始化：Valve Steam Machine 落地页\n\n- 添加 index.html 落地页\n- 添加 source.md 信息源文档\n- SEO优化完成\n- 响应式设计\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n)\")"
+      "Bash(git commit -m \"$(cat <<''EOF''\n初始化：Valve Steam Machine 落地页\n\n- 添加 index.html 落地页\n- 添加 source.md 信息源文档\n- SEO优化完成\n- 响应式设计\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git config --global user.name)",
+      "Bash(git config --global user.email)",
+      "Bash(git config user.name \"thanhti4455bb-wq\")",
+      "Bash(git config user.email \"thanhti4455bb-wq@users.noreply.github.com\")",
+      "Bash(git remote add origin https://github.com/thanhti4455bb-wq/valve-steam-machine.git)",
+      "Bash(git branch -M main)",
+      "Bash(git push -u origin main)",
+      "Bash(git add wrangler.json)",
+      "Bash(git commit -m \"添加 wrangler.json 配置静态资源部署\")",
+      "Bash(git push)",
+      "Bash(git add -A)",
+      "Bash(git commit -m \"修复: 使用 wrangler.jsonc 配置静态资源部署\")"
     ]
   }
 }
