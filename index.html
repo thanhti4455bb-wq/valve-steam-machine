@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover everything about Valve Steam Machine - the revolutionary Linux-based gaming console. Learn about specs, features, history, and how it paved the way for Steam Deck.">
+    <meta name="keywords" content="Steam Machine, Valve, SteamOS, gaming console, PC gaming, Steam Deck, living room gaming, Linux gaming">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Valve Steam Machine - Complete Guide to Valve's Living Room Gaming Console">
+    <meta property="og:description" content="Discover everything about Valve Steam Machine - the revolutionary Linux-based gaming console. Learn about specs, features, history, and how it paved the way for Steam Deck.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://example.com/steam-machine-og-image.jpg">
+    <meta property="og:url" content="https://example.com/steam-machine">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Valve Steam Machine - Complete Guide to Valve's Living Room Gaming Console">
+    <meta name="twitter:description" content="Discover everything about Valve Steam Machine - the revolutionary Linux-based gaming console. Learn about specs, features, history, and how it paved the way for Steam Deck.">
+
+    <title>Valve Steam Machine - Complete Guide to Valve's Living Room Gaming Console</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #000000;
+            color: #ffffff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, #000000 0%, #1a0033 50%, #000066 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                radial-gradient(circle at 20% 50%, rgba(138, 43, 226, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(0, 119, 255, 0.1) 0%, transparent 50%);
+            animation: pulse 8s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #00d4ff 0%, #8a2be2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            color: #b0b0b0;
+            margin-bottom: 2rem;
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #ffffff;
+            background: linear-gradient(135deg, #0077ff 0%, #8a2be2 100%);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeInUp 1s ease-out 0.4s both;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 119, 255, 0.4);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 80px 0;
+            position: relative;
+        }
+
+        section:nth-child(even) {
+            background: linear-gradient(180deg, #000000 0%, #0a0015 100%);
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+            background: linear-gradient(135deg, #00d4ff 0%, #8a2be2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            color: #b0b0b0;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid rgba(138, 43, 226, 0.2);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(138, 43, 226, 0.6);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #00d4ff;
+        }
+
+        .feature-card p {
+            color: #b0b0b0;
+            line-height: 1.6;
+        }
+
+        /* How to Use Steps */
+        .steps {
+            max-width: 800px;
+            margin: 3rem auto;
+        }
+
+        .step {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 2rem;
+            padding: 25px;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            border-radius: 15px;
+            border-left: 4px solid #8a2be2;
+        }
+
+        .step-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #8a2be2;
+            min-width: 50px;
+        }
+
+        .step-content h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: #00d4ff;
+        }
+
+        .step-content p {
+            color: #b0b0b0;
+        }
+
+        /* Specifications Table */
+        .specs-table {
+            max-width: 900px;
+            margin: 3rem auto;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid rgba(138, 43, 226, 0.2);
+        }
+
+        .spec-row {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            border-bottom: 1px solid rgba(138, 43, 226, 0.1);
+        }
+
+        .spec-row:last-child {
+            border-bottom: none;
+        }
+
+        .spec-label {
+            padding: 20px;
+            font-weight: 600;
+            color: #00d4ff;
+            background: rgba(0, 119, 255, 0.05);
+        }
+
+        .spec-value {
+            padding: 20px;
+            color: #b0b0b0;
+        }
+
+        /* Comparison Table */
+        .comparison-table {
+            max-width: 1000px;
+            margin: 3rem auto;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            border-radius: 15px;
+            overflow: hidden;
+            border-collapse: collapse;
+        }
+
+        th {
+            background: rgba(138, 43, 226, 0.2);
+            padding: 20px;
+            text-align: left;
+            color: #00d4ff;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 20px;
+            border-bottom: 1px solid rgba(138, 43, 226, 0.1);
+            color: #b0b0b0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* FAQ Section */
+        .faq-container {
+            max-width: 800px;
+            margin: 3rem auto;
+        }
+
+        .faq-item {
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid rgba(138, 43, 226, 0.2);
+        }
+
+        .faq-question {
+            padding: 20px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #00d4ff;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: rgba(138, 43, 226, 0.1);
+        }
+
+        .faq-answer {
+            padding: 0 20px 20px;
+            color: #b0b0b0;
+            line-height: 1.8;
+        }
+
+        .faq-toggle {
+            font-size: 1.5rem;
+            color: #8a2be2;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            text-align: center;
+            padding: 100px 0;
+            background: linear-gradient(135deg, #1a0033 0%, #000066 100%);
+        }
+
+        .cta-section h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            color: #b0b0b0;
+            margin-bottom: 2rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            background: #000000;
+            color: #666;
+            border-top: 1px solid rgba(138, 43, 226, 0.2);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .subtitle {
+                font-size: 1.2rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            section {
+                padding: 60px 0;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .spec-row {
+                grid-template-columns: 1fr;
+            }
+
+            .spec-label {
+                border-bottom: none;
+            }
+
+            table {
+                font-size: 0.9rem;
+            }
+
+            th, td {
+                padding: 15px 10px;
+            }
+
+            .step {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+
+            .cta-button {
+                padding: 12px 30px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Valve Steam Machine</h1>
+            <p class="subtitle">The Revolutionary Living Room Gaming Console That Changed PC Gaming Forever</p>
+            <a href="#learn-more" class="cta-button">Discover the Legacy</a>
+        </div>
+    </section>
+
+    <!-- What is Steam Machine -->
+    <section id="learn-more">
+        <div class="container">
+            <h2>What is the Steam Machine?</h2>
+            <div class="section-intro">
+                <p>The Steam Machine was Valve's ambitious attempt to bring PC gaming into the living room. Launched in 2015, these Linux-based gaming consoles ran on SteamOS and were manufactured by various OEM partners including Alienware, Zotac, Syber, and more. Each Steam Machine offered different hardware configurations, giving gamers the flexibility of PC gaming with the convenience of a console experience.</p>
+                <p>While the Steam Machine didn't achieve commercial success, it laid the groundwork for Valve's future innovations, including the wildly successful Steam Deck. The lessons learned from Steam Machine's development directly influenced the creation of Proton compatibility layer and refined SteamOS, technologies that power modern Linux gaming today.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section>
+        <div class="container">
+            <h2>Key Features of Steam Machine</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎮</div>
+                    <h3>SteamOS Powered</h3>
+                    <p>Built on a custom Linux distribution optimized for gaming, offering a console-like interface with the power of PC gaming underneath.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏭</div>
+                    <h3>Multiple OEM Options</h3>
+                    <p>Choose from various manufacturers like Alienware, Zotac, and Syber, each offering different specs and price points to match your needs.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔧</div>
+                    <h3>Upgradeable Hardware</h3>
+                    <p>Unlike traditional consoles, Steam Machines featured upgradeable components, allowing you to enhance performance over time.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>Steam Library Access</h3>
+                    <p>Instant access to thousands of games from your Steam library, with native Linux support and streaming capabilities.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Steam Controller</h3>
+                    <p>Bundled with the innovative Steam Controller featuring dual trackpads and extensive customization options for any game.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📡</div>
+                    <h3>Steam Link Compatible</h3>
+                    <p>Stream games from your main PC to your Steam Machine or use Steam Link to extend gaming to any room in your house.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Use -->
+    <section>
+        <div class="container">
+            <h2>How to Use Steam Machine</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Setup and Connect</h3>
+                        <p>Connect your Steam Machine to your TV via HDMI, plug in the Steam Controller, and power on the device. The initial setup wizard will guide you through network configuration and Steam account login.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Access Your Library</h3>
+                        <p>Once logged in, your entire Steam library appears in the SteamOS interface. Games with native Linux support can be downloaded and played directly, while others can be streamed from your Windows PC.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Configure Controls</h3>
+                        <p>Customize your Steam Controller settings for each game. The controller's versatile trackpads and buttons can be mapped to keyboard and mouse inputs for maximum compatibility.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Game and Enjoy</h3>
+                        <p>Launch your games from the Big Picture mode interface and enjoy PC gaming from the comfort of your couch. Switch to desktop mode anytime for full Linux desktop access.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications -->
+    <section>
+        <div class="container">
+            <h2>Technical Specifications</h2>
+            <p class="section-intro">Specifications varied by manufacturer. Here's an example from the Alienware Steam Machine:</p>
+            <div class="specs-table">
+                <div class="spec-row">
+                    <div class="spec-label">Operating System</div>
+                    <div class="spec-value">SteamOS (Debian-based Linux)</div>
+                </div>
+                <div class="spec-row">
+                    <div class="spec-label">Processor</div>
+                    <div class="spec-value">Intel Core i3/i5/i7 (varied by model)</div>
+                </div>
+                <div class="spec-row">
+                    <div class="spec-label">Graphics</div>
+                    <div class="spec-value">NVIDIA GeForce GTX GPU (custom designs)</div>
+                </div>
+                <div class="spec-row">
+                    <div class="spec-label">Memory</div>
+                    <div class="spec-value">4GB - 16GB DDR3/DDR4 RAM</div>
+                </div>
+                <div class="spec-row">
+                    <div class="spec-label">Storage</div>
+                    <div class="spec-value">500GB - 2TB HDD/SSD options</div>
+                </div>
+                <div class="spec-row">
+                    <div class="spec-label">Connectivity</div>
+                    <div class="spec-value">WiFi, Ethernet, Bluetooth, USB 3.0, HDMI</div>
+                </div>
+                <div class="spec-row">
+                    <div class="spec-label">Form Factor</div>
+                    <div class="spec-value">Compact living room console design</div>
+                </div>
+                <div class="spec-row">
+                    <div class="spec-label">Controller</div>
+                    <div class="spec-value">Steam Controller with dual trackpads</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison -->
+    <section>
+        <div class="container">
+            <h2>Steam Machine vs Steam Deck</h2>
+            <p class="section-intro">How does the original Steam Machine compare to its spiritual successor?</p>
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Steam Machine (2015)</th>
+                            <th>Steam Deck (2022)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Form Factor</strong></td>
+                            <td>Living room console</td>
+                            <td>Handheld portable device</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Operating System</strong></td>
+                            <td>SteamOS 2.0 (Debian-based)</td>
+                            <td>SteamOS 3.0 (Arch-based)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hardware</strong></td>
+                            <td>Multiple OEM configurations</td>
+                            <td>Unified AMD APU design</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Game Compatibility</strong></td>
+                            <td>Native Linux games only</td>
+                            <td>Proton enables Windows game support</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Price Range</strong></td>
+                            <td>$449 - $1,500+</td>
+                            <td>$399 - $649</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Market Success</strong></td>
+                            <td>Limited adoption, discontinued</td>
+                            <td>Highly successful, ongoing</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Legacy</strong></td>
+                            <td>Pioneered SteamOS and living room gaming</td>
+                            <td>Realized the vision with portable form</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section>
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can I still buy a Steam Machine in 2025?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Steam Machines are no longer in production and were officially discontinued by most manufacturers by 2018. However, you may find used units on secondary markets like eBay or local classifieds. For a modern alternative, consider the Steam Deck, which represents the evolution of Valve's living room gaming vision in a portable format.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Why did Steam Machine fail commercially?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Several factors contributed to Steam Machine's limited success: limited native Linux game library at launch, confusing variety of hardware configurations from different OEMs, high prices compared to traditional consoles, and the Steam Controller's learning curve. Additionally, the market wasn't ready for a Linux-based gaming platform, and Windows PCs offered better game compatibility.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What games could you play on Steam Machine?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Steam Machines could natively play games with Linux support, which included popular titles like Counter-Strike: Global Offensive, Dota 2, Team Fortress 2, and many indie games. Users could also stream Windows-only games from a Windows PC using Steam's in-home streaming feature. At launch, the Linux library was limited, but it grew significantly over the years.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can I install Windows on a Steam Machine?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, most Steam Machines could run Windows as they were essentially compact PCs. Many users chose to install Windows 10 to access a larger game library. Valve didn't officially support this, but the hardware was compatible. Installing Windows would give you access to the full Steam catalog and other PC game stores.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How did Steam Machine influence the Steam Deck?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Steam Machine taught Valve crucial lessons that shaped the Steam Deck. The development of SteamOS, the importance of game compatibility (leading to Proton), and understanding what gamers wanted in a console-like PC experience all came from Steam Machine. The Steam Deck succeeded by offering a unified hardware design, portable form factor, and vastly improved Windows game compatibility through Proton.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Is SteamOS still supported on Steam Machines?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>SteamOS 2.0, which shipped with Steam Machines, received limited updates after the product line was discontinued. However, you can install SteamOS 3.0 (the Steam Deck's operating system) on compatible hardware, though official support is primarily for the Steam Deck. Many Steam Machine owners have switched to other Linux distributions or Windows for better support and game compatibility.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Explore PC Gaming?</h2>
+            <p>While Steam Machines are part of gaming history, the vision lives on with Steam Deck and modern PC gaming.</p>
+            <a href="https://store.steampowered.com/steamdeck" class="cta-button">Discover Steam Deck</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Steam Machine Guide. This is an informational resource and is not affiliated with Valve Corporation. Steam, Steam Machine, SteamOS, and Steam Deck are trademarks of Valve Corporation.</p>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Toggle Functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const answer = faqItem.querySelector('.faq-answer');
+                const toggle = question.querySelector('.faq-toggle');
+
+                // Toggle display
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                    toggle.textContent = '+';
+                } else {
+                    // Close all other FAQs
+                    document.querySelectorAll('.faq-answer').forEach(a => a.style.display = 'none');
+                    document.querySelectorAll('.faq-toggle').forEach(t => t.textContent = '+');
+
+                    // Open clicked FAQ
+                    answer.style.display = 'block';
+                    toggle.textContent = '−';
+                }
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
